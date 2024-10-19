@@ -7,5 +7,115 @@ html {
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
+}
+
+/* các phần tử common*/
+a {
+  text-decoration: none;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 50px;
+  min-width: 118px;
+}
+
+/* ============== Header ============ */
+
+.header.fixed {
+  background-color: #fffcf4;
+  position: sticky;
+  top: -28px;
+}
+
+/* Main_content */
+.main_content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+}
+
+/* ======= body_header ========== */
+.body_header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-top: 36px;
+}
+
+.body_header .logo {
+  width: 85px;
+  height: 34px;
+}
+
+/* ============ nav =============*/
+.nav {
+  position: relative;
+  margin-left: auto;
+  margin-right: 70px;
+  line-height: 28px;
+  width: 359px;
+  height: 28px;
+  /* margin-left: 400px; */
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* a in nav */
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 0;
+}
+
+.nav .active a::after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #171100;
+  position: absolute;
+  bottom: 0px;
+}
+
+.nav li.active a,
+.nav a:hover {
+  /* Sử dụng font-weight làm cho Chữ dày lên khiến cho các text bên cạnh bị giật*/
+  color: #171100;
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+
+/* -------------------------------- NAV ----------------------------------- */
+
+/* ============= action btn =============== */
+.action {
+  border-radius: 24.5px;
+  background-color: #171100;
+}
+
+.btn-sign-up {
+  display: block;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 0 41px;
+  min-width: 144px;
+}
+
+.boy {
+  width: 470px;
+  height: 685px;
+  margin-top: 65px;
 }
