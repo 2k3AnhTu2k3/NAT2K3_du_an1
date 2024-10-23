@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --font_head: "Sen", serif;
+  --primary-color: #ffb900;
+}
 
 html {
   font-size: 62.5%;
@@ -17,21 +21,17 @@ a {
 }
 
 .btn {
+  display: inline-block;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.6rem;
   text-align: center;
-  line-height: 50px;
-  min-width: 118px;
+  /* min-width: 118px; */
 }
 
-/* ============== Header ============ */
-
-.header.fixed {
-  background-color: #fffcf4;
-  position: sticky;
-  top: -28px;
+.btn:hover {
+  opacity: 0.8;
 }
 
 /* Main_content */
@@ -40,6 +40,15 @@ a {
   margin-left: auto;
   margin-right: auto;
   max-width: calc(100% - 48px);
+}
+
+/* ============== Header ============ */
+
+.header.fixed {
+  z-index: 1;
+  background-color: #fffcf4;
+  position: sticky;
+  top: -28px;
 }
 
 /* ======= body_header ========== */
@@ -100,22 +109,194 @@ a {
 /* -------------------------------- NAV ----------------------------------- */
 
 /* ============= action btn =============== */
-.action {
+
+.action .btn-sign-up {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-width: 144px;
+  line-height: 50px;
   border-radius: 24.5px;
   background-color: #171100;
 }
 
-.btn-sign-up {
-  display: block;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  padding: 0 41px;
-  min-width: 144px;
+/* ================================ Main ================================= */
+
+/* ==================== Hero ===================== */
+.hero {
+  background-color: #fffcf4;
+  padding: 65px 0;
 }
 
-.boy {
+/* ---------- Body --------------
+           media-block 
+          content-block
+*/
+
+.hero .body {
+  display: flex;
+  /* align-items: flex-end; */
+}
+
+/* <!-------------------------- hero-left ---------------------------> */
+.hero .media-block {
+  position: relative;
+  width: 48.718%;
+}
+
+.hero .media-block + img {
   width: 470px;
   height: 685px;
-  margin-top: 65px;
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+/* ================ hero_summary ===========*/
+.hero .hero-summary {
+  width: 270px;
+  height: 244px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 0 24px 24px;
+  position: absolute;
+  bottom: 48px;
+  left: 300px;
+}
+
+.hero-summary .icon {
+  width: 48px;
+  height: 48px;
+  /* vì icon là con của .courser mà .courser có display: flex */
+  align-self: center;
+}
+
+/* ------ courser ------ */
+
+.hero-summary .Courser {
+  display: flex;
+}
+
+/* ---- info */
+.hero-summary .info {
+  height: 56px;
+  margin-left: 16px;
+}
+
+.hero-summary .label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 185.714%; /* 26px*/
+}
+
+.hero-summary .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 166.667%; /* 30px  */
+}
+
+/* ----------------------------- hero-right -------------------------- */
+
+.hero .content-block {
+  width: 51.282%;
+  padding-left: 130px;
+  padding-top: 46px;
+}
+
+.hero .head_content {
+  color: var(--font_head);
+  font-family: Sen;
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 68px; /* 117.241% */
+  letter-spacing: -1.16px;
+  margin-bottom: 28px;
+}
+
+.hero .content-block .title_head {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 30px; /* 166.667% */
+}
+
+.hero .action_hero {
+  display: flex;
+  align-items: center;
+  margin: 38px 0 49px;
+}
+
+.hero .button_left {
+  /* display: inline-block; */
+  height: 64px;
+  margin-right: 28px;
+}
+
+.hero .button_left .btn_1 {
+  font-size: 1.8rem;
+  line-height: 30px;
+  line-height: 64px;
+  min-width: 180px;
+  background: var(--primary-color);
+  border-radius: 32px;
+  /* padding: 17px 33px 17px 34px; */
+}
+
+.hero .button_right {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.hero .button_right .text_btn {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 30px;
+  margin-left: 14px;
+  width: 148px;
+}
+
+.hero .button_right img {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+}
+
+.hero .button_right button:hover {
+  opacity: 0.6;
+}
+
+.hero .button_right button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background: #fff;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.07);
+}
+
+/* =========== number ========= */
+
+.hero .number {
+  display: flex;
+  column-gap: 28px;
+  margin-top: 8px;
+}
+
+.hero .number h2 {
+  display: inline;
+  color: #171100;
+  font-family: var(--font_head);
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 54px; /* 122.727% */
+}
+
+.hero .number span {
+  margin-left: 12px;
 }
