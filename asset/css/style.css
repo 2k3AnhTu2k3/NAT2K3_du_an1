@@ -16,6 +16,13 @@ body {
 }
 
 /* các phần tử common*/
+
+.title_head {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 30px; /* 166.667% */
+}
+
 a {
   text-decoration: none;
 }
@@ -33,6 +40,17 @@ a {
 .btn:hover {
   opacity: 0.8;
 }
+
+.head-lv2 {
+  color: #171100;
+  font-family: var(--font_head);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26316; /* 126.316% */
+  letter-spacing: -0.76px;
+}
+
+/* -------------------------------------------------- */
 
 /* Main_content */
 .main_content {
@@ -217,12 +235,6 @@ a {
   margin-bottom: 28px;
 }
 
-.hero .content-block .title_head {
-  color: #5f5b53;
-  font-size: 1.8rem;
-  line-height: 30px; /* 166.667% */
-}
-
 .hero .action_hero {
   display: flex;
   align-items: center;
@@ -300,3 +312,144 @@ a {
 .hero .number span {
   margin-left: 12px;
 }
+
+/* ============================== POPULAR ========================== */
+.popular {
+  margin-top: 200px;
+}
+
+/* ---- popular-top ---*/
+
+.popular .popular_top {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+/* popular-left */
+.popular .info .head-lv2 {
+  margin-bottom: 16px;
+}
+
+/* popular-right */
+
+.popular_top .control {
+  display: flex;
+  margin-left: 614px;
+  column-gap: 18px;
+}
+
+.popular_top .control button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+  border-radius: 999px;
+  color: var(--primary-color);
+}
+.popular_top .control button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ---- popular-bottom ----*/
+
+.popular .course-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+
+/* learn-design */
+.course-list .learn_design {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+  width: 372px;
+  height: 466px;
+}
+
+.course-list .learn_design:hover {
+  border: 1px solid transparent;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.popular .learn_design .thumb {
+  border-radius: 12px 12px 0px 0px;
+  width: 370px;
+  height: 278px;
+}
+
+/* info */
+
+.popular .learn_design .info {
+  margin: 16px 22px 22px;
+}
+
+/* head */
+.course-list .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.course-list .head_3 {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66667; /* 166.667% */
+}
+
+.course-list .review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 48px;
+  height: 28px;
+}
+
+.course-list .review .star {
+  width: 18px;
+  height: 18px;
+}
+
+.course-list .review span {
+  color: #fea31b;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+  width: 24px;
+  height: 28px;
+}
+/* -------------------------- */
+
+.course-list .title_head {
+  font-size: 1.4rem;
+  line-height: 26px;
+}
+
+/* foot */
+.course-list .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.course-list .foot .action .btn_1 {
+  font-size: 1.4rem;
+  line-height: 50px; /* 185.714% */
+  border-radius: 25px;
+  background: #171100;
+  min-width: 118px;
+}
+
+.course-list .foot .action .btn_1:hover {
+  background-color: var(--primary-color);
+}
+
+/* ------------------------------- */
