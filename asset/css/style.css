@@ -50,6 +50,27 @@ a {
   letter-spacing: -0.76px;
 }
 
+/* line-clamp */
+
+.line-clamp {
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  /* width: 250px; */
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp.line-clamp-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
 /* -------------------------------------------------- */
 
 /* Main_content */
@@ -362,6 +383,7 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 55px;
+  column-gap: 30px;
 }
 
 /* learn-design */
@@ -369,8 +391,9 @@ a {
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #fff;
-  width: 372px;
-  height: 466px;
+  /* width: 372px; */
+  /* height: 466px; */
+  flex: 1;
 }
 
 .course-list .learn_design:hover {
@@ -380,7 +403,7 @@ a {
 
 .popular .learn_design .thumb {
   border-radius: 12px 12px 0px 0px;
-  width: 370px;
+  width: 100%;
   height: 278px;
 }
 
