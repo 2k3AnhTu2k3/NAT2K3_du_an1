@@ -23,6 +23,20 @@ body {
   line-height: 30px; /* 166.667% */
 }
 
+.title-h3 {
+  margin: 12px 0;
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.title_BFBCB2 {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.85714; /* 185.714% */
+}
+
 a {
   text-decoration: none;
 }
@@ -71,6 +85,12 @@ a {
   word-break: break-all;
 }
 
+.content {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.85714;
+}
+
 /* -------------------------------------------------- */
 
 /* Main_content */
@@ -96,8 +116,8 @@ a {
   height: 1px;
   width: 100%;
   background-color: #ccc;
-  position: relative;
-  bottom: -1px;
+  /* position: relative; */
+  /* bottom: -1px; */
   margin-top: 3px;
 }
 
@@ -533,12 +553,6 @@ a {
   line-height: 34px; /* 141.667% */
 }
 
-.feedback-items .info p:last-of-type {
-  color: #bfbcb2;
-  font-size: 1.4rem;
-  line-height: 1.85714; /* 185.714% */
-}
-
 .feedback-items .info .dots {
   display: flex;
   column-gap: 6px;
@@ -732,14 +746,6 @@ a {
   bottom: 0;
 }
 
-.blog .info .title {
-  margin: 12px 0;
-  color: #171100;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 1.75;
-}
-
 .blog .info .action .btn_1 {
   font-size: 1.4rem;
   line-height: 50px;
@@ -772,4 +778,90 @@ a {
 .our-blog .dots .dot.active {
   background: var(--primary-color);
   cursor: default;
+}
+
+/* ================ Footer ============== */
+.footer {
+  background: #2e2100;
+  padding-top: 96px;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 130px;
+}
+
+/* lesson */
+.footer .row .Lesson {
+  width: 22.82%;
+  margin-right: 15px;
+}
+
+.footer .row .logo {
+  height: 34px;
+}
+
+.footer .row .Lesson .title_BFBCB2 {
+  margin: 18px 0;
+}
+
+.footer .row .icon {
+  display: flex;
+  column-gap: 18px;
+}
+
+/* column */
+.footer .row .column:last-child {
+  width: 19.7436%;
+}
+
+.footer .column .title-h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.footer .column .title-h3::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 130px;
+  margin: 14px 0 28px;
+  background-color: #595548;
+}
+
+.footer .column .title_BFBCB2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.footer .column .title_BFBCB2 a {
+  color: inherit;
+}
+
+/* Column-4 */
+.footer .column strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 26px; /* 185.714% */
+}
+
+/* cross-bar */
+
+.footer .cross-bar::before {
+  display: block;
+  content: "";
+  background: #59554b;
+  width: 100%;
+  height: 1px;
+  margin-top: 38px;
+}
+
+.footer .cross-bar p {
+  color: #807d74;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 26px; /* 185.714% */
+  padding: 28px 0;
 }
